@@ -1,5 +1,4 @@
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
 import "./index.css";
 import {
   createBrowserRouter,
@@ -7,9 +6,14 @@ import {
   Route,
   RouterProvider,
 } from "react-router";
+import MainLayout from "./layouts/MainLayout/MainLayout";
 
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route path="" index element={<App />}></Route>)
+  createRoutesFromElements(
+    <Route path="">
+      <Route path="" index element={<MainLayout />}></Route>
+    </Route>
+  )
 );
 
 createRoot(document.getElementById("root")!).render(
