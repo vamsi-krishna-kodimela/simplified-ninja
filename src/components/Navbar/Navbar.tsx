@@ -22,7 +22,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="p-8 px-6 shadow h-100 hidden md:block">
+    <nav className="p-8 px-6 shadow h-screen hidden md:block row-span-2">
       <div className="flex gap-2 items-center">
         <img className="w-8" src={Logo} alt="Simplified.ninja" />
         <h1 className="font-semibold text-2xl text-slate-600">

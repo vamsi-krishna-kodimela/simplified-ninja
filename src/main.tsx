@@ -7,11 +7,14 @@ import {
   RouterProvider,
 } from "react-router";
 import MainLayout from "./layouts/MainLayout/MainLayout";
+import Home from "./screens/Home/Home";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="">
-      <Route path="" index element={<MainLayout />}></Route>
+      <Route path="" element={<MainLayout />}>
+        <Route path="" index element={<Home />} />
+      </Route>
     </Route>
   )
 );

@@ -3,7 +3,7 @@ import { Bell, Search } from "react-feather";
 
 const Header = () => {
   return (
-    <header className="flex justify-between flex-col lg:flex-row items-center">
+    <header className="p-8 w-100 flex justify-between flex-col lg:flex-row items-center">
       <div>
         <h4 className="text-base text-slate-500 m-0 mb-2">
           Hi, Vamsi Krishna Kodimela
