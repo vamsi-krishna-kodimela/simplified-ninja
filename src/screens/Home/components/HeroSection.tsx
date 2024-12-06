@@ -3,7 +3,7 @@ import Logo from "../../../assets/images/logo.svg";
 
 const HeroSection = () => {
   return (
-    <div className="w-4/5 p-8 rounded-3xl bg-indigo-500 gap-6 grid grid-cols-[1fr_auto]">
+    <div className="w-100 p-12 rounded-3xl bg-indigo-500 gap-6 grid grid-cols-[1fr_auto]">
       <h6 className="text-4xl font-medium text-white">
         Empowering Entrepreneurs: From Idea to Impact
       </h6>
