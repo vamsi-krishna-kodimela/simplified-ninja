@@ -22,19 +22,19 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="p-8 px-6 shadow h-screen hidden md:block row-span-2">
+    <nav className="p-8 px-4 shadow h-screen hidden md:block row-span-2">
       <div className="flex gap-2 items-center">
         <img className="w-8" src={Logo} alt="Simplified.ninja" />
         <h1 className="font-semibold text-2xl text-slate-600">
           Simplified<span className="text-indigo-500">.ninja</span>
         </h1>
       </div>
-      <ul className="mt-8 flex flex-col gap-2">
+      <ul className="mt-6 flex flex-col gap-2">
         {links.map((link) => (
           <li key={link.title}>
             <NavLink
               className={({ isActive }) =>
-                "flex gap-2 items-center text-base p-2 rounded " +
+                "flex gap-2 items-center text-base p-4 rounded-lg " +
                 (isActive ? "bg-indigo-500 text-white" : "text-slate-600")
               }
               to={link.route}
